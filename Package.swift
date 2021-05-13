@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-		name: "CardIOSDK",
-		products: [
-				// Products define the executables and libraries a package produces, and make them visible to other packages.
-				.library(
-						name: "CardIOSDK",
-						targets: ["CardIO"]),
-		],
-		dependencies: [
-			
-		],
-		targets: [
-				.binaryTarget(name: "CardIO", path: "./Sources/CardIOSDK/CardIO.xcframework")
-		]
+    name: "CardIOSDK",
+    products: [
+        // Products define the executables and libraries a package produces, and make them visible to other packages.
+        .library(
+            name: "CardIOSDK",
+            targets: ["CardIO"]),
+    ],
+    dependencies: [
+        
+    ],
+    targets: [
+        .binaryTarget(name: "CardIO", path: "./Sources/CardIOSDK/CardIO.xcframework")
+    ]
 )
